@@ -1,4 +1,10 @@
 const [a, b] = [11, 22];
+function Graph(nodes, edges) {
+  this.nodes = nodes;
+  this.edges = edges;
+  // cache minimum distance between pairs of nodes
+  this.distance = {};
+}
 
 console.log("a:", a);
 console.log("b:", b);
