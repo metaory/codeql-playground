@@ -12,6 +12,11 @@ function Rectangle(x, y, width, height) {
 	width = width;
 	this.height = height;
 }
+function isOdd(x) {
+	return x % 2 === 1;
+}
+
+console.log(isOdd(-9)); // prints 'false'
 
 let z = "foobar";
 function error(msg) {
