@@ -3,6 +3,13 @@ const [a, b] = [11, 22];
 console.log("a:", a);
 console.log("b:", b);
 
+function Rectangle(x, y, width, height) {
+	this.x = x;
+	this.y = y;
+	width = width;
+	this.height = height;
+}
+
 let z = "foobar";
 
 const readonly = "mread";
