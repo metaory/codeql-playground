@@ -14,7 +14,7 @@ let z = "foobar";
 function error(msg) {
   console.log(msg);
 }
-
+var x = 1<<40;
 function processResponse(response) {
   if (response.status === 200) {
     var error = processResponseText(response.responseText);
