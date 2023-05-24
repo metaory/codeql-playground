@@ -2,6 +2,9 @@ const [a, b] = [11, 22];
 
 console.log("a:", a);
 console.log("b:", b);
+function avg(x, y) {
+	return (x + y)/2;
+}
 
 function Rectangle(x, y, width, height) {
 	this.x = x;
@@ -53,3 +56,5 @@ function isOdd(x) {
 }
 
 console.log(isOdd(-9)); // prints 'false'
+if (f())
+	f();
