@@ -36,5 +36,4 @@ console.log(isOdd(-9)); // prints 'false'
 
 function f() {
     "usestrict";
-    ...
 }
