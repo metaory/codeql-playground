@@ -52,3 +52,25 @@ function processResponse(response) {
     error("Unexpected response status " + response.status);
   }
 }
+
+for (let i = 1; i < ids.lenght; ++i) {
+  const id = ids[i];
+  if (id) {
+    const element = document.getElementById(id);
+    element.className += " selected";
+  }
+}
+
+function cleanupLater(delay, cb) {
+  setTimeout(() => {
+    cleanup();
+    if (cb) {
+      // BAD: useless check, `cb` is always truthy
+      cb();
+    }
+  }, delay);
+}
+
+cleanupLater(1000, () => {
+  console.log("Cleanup done");
+});
