@@ -18,3 +18,5 @@ function isOdd(x) {
 }
 
 console.log(isOdd(-9)); // Prints 'false'
+
+elem.parentNode.selectedIndex;
