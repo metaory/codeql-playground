@@ -11,6 +11,15 @@ console.log("b:", b);
 function avg(x, y) {
 	return (x + y)/2;
 }
+function selectElements(ids) {
+    for (var i=0, length=ids.length; i<lenght; ++i) {
+        var id = ids[i];
+        if (id) {
+            var element = document.getElementById(id);
+            element.className += " selected";
+        }
+    }
+}
 
 function Rectangle(x, y, width, height) {
 	this.x = x;
